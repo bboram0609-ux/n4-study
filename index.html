@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>N4 스터디</title>
+  <meta name="description" content="JLPT N4 단어·한자·문법·청해 학습과 모의 퀴즈">
+  <meta name="theme-color" content="#fbfbf7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101634" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=M+PLUS+Rounded+1c:wght@400;700;800&family=Outfit:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="view" class="view"></main>
+
+  <nav class="tabbar" aria-label="메뉴">
+    <a href="#home" data-tab="home" aria-label="홈">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z" fill="currentColor"/></svg>
+    </a>
+    <a href="#vocab" data-tab="vocab" aria-label="단어"><span class="glyph">あ</span></a>
+    <a href="#kanji" data-tab="kanji" aria-label="한자"><span class="glyph">漢</span></a>
+    <a href="#grammar" data-tab="grammar" aria-label="문법"><span class="glyph">文</span></a>
+    <a href="#listen" data-tab="listen" aria-label="청해">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><rect x="2.5" y="13" width="5" height="8" rx="2.2" fill="currentColor"/><rect x="16.5" y="13" width="5" height="8" rx="2.2" fill="currentColor"/></svg>
+    </a>
+    <a href="#quiz" data-tab="quiz" aria-label="퀴즈">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 4.5l4 4L9 19l-5 1 1-5z" fill="currentColor"/><path d="M14 6l4 4" stroke="var(--nav-bg)" stroke-width="1.6"/></svg>
+    </a>
+  </nav>
+
+  <dialog id="modal"></dialog>
+
+  <script src="data/vocab.js"></script>
+  <script src="data/kanji.js"></script>
+  <script src="data/grammar.js"></script>
+  <script src="data/listening.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
