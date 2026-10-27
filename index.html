@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>N4 스터디</title>
+  <meta name="description" content="JLPT N4 단어·한자·문법 학습과 모의 퀴즈">
+  <meta name="theme-color" content="#d6455d">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>N4 스터디</h1>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <nav class="tabbar" aria-label="메뉴">
+    <a href="#home" data-tab="home"><span class="ico">🏠</span>홈</a>
+    <a href="#vocab" data-tab="vocab"><span class="ico">あ</span>단어</a>
+    <a href="#kanji" data-tab="kanji"><span class="ico">漢</span>한자</a>
+    <a href="#grammar" data-tab="grammar"><span class="ico">文</span>문법</a>
+    <a href="#quiz" data-tab="quiz"><span class="ico">✎</span>퀴즈</a>
+  </nav>
+
+  <dialog id="modal"></dialog>
+
+  <script src="data/vocab.js"></script>
+  <script src="data/kanji.js"></script>
+  <script src="data/grammar.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
